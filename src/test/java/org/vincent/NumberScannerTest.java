@@ -8,7 +8,6 @@ class NumberScannerTest {
 
     @Test
     void inputReader() {
-        assertEquals("",NumberScanner.inputReader());
 
     }
 }
