@@ -12,7 +12,7 @@ public class NumberGuessingGame {
         int randomInt = ThreadLocalRandom.current().nextInt(1, 101);
         int numberGuess = scanner.nextInt();
         int guessCounter = 1;
-//        System.out.println(randomInt);
+
         do {
             if(numberGuess > randomInt){
                 System.out.println("Too high!");
@@ -23,6 +23,7 @@ public class NumberGuessingGame {
             System.out.println("Input another number guess:");
             numberGuess = scanner.nextInt();
         } while (numberGuess!=randomInt);
+
         System.out.println("Congrats you guess the correct number with "+guessCounter+" tries!");
     }
 }
